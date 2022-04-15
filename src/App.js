@@ -6,6 +6,7 @@ import { Router, Link, useHistory } from "react-router-dom";
 class App extends Component {
   state = {
     username: null,
+    name: ''
   };
 
   liveWithFacebook = () => {
