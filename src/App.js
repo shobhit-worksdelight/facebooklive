@@ -63,7 +63,7 @@ class App extends Component {
         <header className="App-header">
           <h4 className="App-title">React Go To Live Facebook </h4>
           <div className="App-intro">
-            {!username && (
+            {/* {!username && (
               <div>
                 <p>Click on one of any button below to login</p>
                 <FacebookLoginButton onLogin={this.onFacebookLogin}>
@@ -72,8 +72,8 @@ class App extends Component {
                   </button>
                 </FacebookLoginButton>
               </div>
-            )}
-            {username && <p>Welcome back, {username}</p>}
+            )} */}
+            {/* {username && <p>Welcome back, {username}</p>} */}
             {/* <button type="button" class="btn btn-info" onClick={this.liveWithFacebook}>
               live
             </button> */}
