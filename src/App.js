@@ -6,7 +6,7 @@ import { Router, Link, useHistory } from "react-router-dom";
 class App extends Component {
   state = {
     username: null,
-    name: ''
+    name: "",
   };
 
   liveWithFacebook = () => {
@@ -57,18 +57,19 @@ class App extends Component {
   redirect = () => {};
 
   render() {
-   
     const { username } = this.state;
     return (
       <div className="App">
         <header className="App-header">
-          <h4 className="App-title" >React Go To Live Facebook </h4>
+          <h4 className="App-title">React Go To Live Facebook </h4>
           <div className="App-intro">
             {!username && (
               <div>
                 <p>Click on one of any button below to login</p>
                 <FacebookLoginButton onLogin={this.onFacebookLogin}>
-                <button type="button" class="btn btn-info">Facebook</button>
+                  <button type="button" class="btn btn-info">
+                    Facebook
+                  </button>
                 </FacebookLoginButton>
               </div>
             )}
@@ -76,8 +77,13 @@ class App extends Component {
             {/* <button type="button" class="btn btn-info" onClick={this.liveWithFacebook}>
               live
             </button> */}
-            <a href="https://www.facebook.com/live/producer/670722920811318"  class="button">
-            <button type="button" class="btn btn-info">Go live</button>
+            <a
+              href="https://www.facebook.com/live/producer/670722920811318"
+              class="button"
+            >
+              <button type="button" class="btn btn-info">
+                Go live
+              </button>
             </a>
           </div>
         </header>
